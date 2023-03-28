@@ -10,6 +10,7 @@ terraform {
 provider "google" {
         project     = "prasannamd"
         region      = "us-central-1"
+        credentials = file("/workspace/terraform/auth.json")
 }
 
 resource "google_compute_instance" "terraformvm" {
