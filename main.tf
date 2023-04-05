@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-        project     = "prasannamd"
+        project     = "engineteam-1680241622526"
         region      = "us-central-1"
         credentials = file("/workspace/terraform/auth.json")
 }
