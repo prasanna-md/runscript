@@ -40,11 +40,11 @@ resource "google_compute_instance" "terraformvm" {
 
   metadata_startup_script = "echo hi > /test.txt"
 
-  service_account {
-    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = "cleanupserviceaccount@prasannamd.iam.gserviceaccount.com"
-    scopes = ["https://www.googleapis.com/auth/cloud-platform"]
-  }
+#   service_account {
+#     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
+#     email  = "cleanupserviceaccount@prasannamd.iam.gserviceaccount.com"
+#     scopes = ["https://www.googleapis.com/auth/cloud-platform"]
+#   }
 }
 
 resource "google_compute_instance" "instance-2" {
@@ -75,11 +75,11 @@ resource "google_compute_instance" "instance-2" {
 
   metadata_startup_script = "echo hi > /test.txt"
 
-  service_account {
-    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = "cleanupserviceaccount@prasannamd.iam.gserviceaccount.com"
-    scopes = ["https://www.googleapis.com/auth/cloud-platform"]
-  }
+#   service_account {
+#     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
+#     email  = "cleanupserviceaccount@prasannamd.iam.gserviceaccount.com"
+#     scopes = ["https://www.googleapis.com/auth/cloud-platform"]
+#   }
 }
 
 resource "google_compute_instance" "instance-3" {
